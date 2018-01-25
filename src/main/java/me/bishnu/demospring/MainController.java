@@ -9,19 +9,19 @@ import java.util.Scanner;
 public class MainController {
 
 
-    @RequestMapping("/")
-    public String showIndex()
-    {
 
-        String userName="";
+
+    @RequestMapping("/user")
+    public String showIndex() {
+
+        String userName = "";
         Scanner keyboard = new Scanner(System.in);
         userName = keyboard.nextLine();
-        String greet = "Hello"+userName;
+        String greet = "Hello" + userName;
         System.out.println(greet);
         return greet;
 
 
 
     }
-
 }
